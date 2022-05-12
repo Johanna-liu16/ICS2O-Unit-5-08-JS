@@ -17,16 +17,22 @@ if (navigator.serviceWorker) {
 /**
  * This function calculates area of a parrallelogram.
  */
-function calculate() {
-  // input
-  const length = parseInt(document.getElementById("length-of-pyramid").value)
-  const width = parseInt(document.getElementById("width-of-pyramid").value)
-  const height = parseInt(document.getElementById("height-of-pyramid").value)
+/**
+ * Input
+ */
+function myButtonClicked() {
+  const counter1 = parseInt(document.getElementById("counter1").value);
+  const counter2 = parseInt(document.getElementById("counter2").value);
+  var addedNumber = 0;
+  var answer = counter1;
 
-  // process
-  const volume = (length * width * height) / 3
+  if (counter1 > 0 && counter2 > 0) {
+    while (addedNumber < counter2) {
+      addedNumber = addedNumber + 1;
+      answer = answer - counter2;
+    }
+  }
 
-  // output
-  document.getElementById("answers").innerHTML =
-    "Volume is: " + volume.toFixed(2) + " cm³"
+  document.getElementById("answer").innerHTML = 
+      counter1 + " x " + addedNumber + " = " + answer;
 }
