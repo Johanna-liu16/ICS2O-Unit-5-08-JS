@@ -27,12 +27,12 @@ function myButtonClicked() {
   var answer = counter1;
 
   if (counter1 > 0 && counter2 > 0) {
-    while (addedNumber < counter2) {
+    while (answer >= counter2) {
       addedNumber = addedNumber + 1;
       answer = answer - counter2;
     }
   }
 
   document.getElementById("answer").innerHTML = 
-      counter1 + " x " + addedNumber + " = " + answer;
+      counter1 + " ÷ " + counter2 + " = " + addedNumber;
 }
