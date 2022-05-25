@@ -36,9 +36,9 @@ function myButtonClicked() {
     if (answer == 0) {
     remainder = 0;
   } else if (answer != 0) {
-    remainder = answer + counter2;
+    remainder = answer;
   }
     
   document.getElementById("answer").innerHTML = 
-      counter1 + " ÷ " + counter2 + " = " + addedNumber + "The remainder is " + remainder;
+      counter1 + " ÷ " + counter2 + " = " + addedNumber + " The remainder is " + remainder;
 }
