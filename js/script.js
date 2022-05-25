@@ -36,7 +36,7 @@ function myButtonClicked() {
     if (answer == 0) {
     remainder = 0;
   } else if (answer != 0) {
-    remainder = answer + number2;
+    remainder = answer + counter2;
   }
     
   document.getElementById("answer").innerHTML = 
